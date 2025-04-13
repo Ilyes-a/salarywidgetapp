@@ -75,16 +75,6 @@
 			path = SalaireWidgetApp;
 			sourceTree = "<group>";
 		};
-		2AE5F6FB2DABDD720049750E /* SalaireWidgetAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SalaireWidgetAppTests;
-			sourceTree = "<group>";
-		};
-		2AE5F7052DABDD720049750E /* SalaireWidgetAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SalaireWidgetAppUITests;
-			sourceTree = "<group>";
-		};
 		2AE5F71F2DABDDB20049750E /* SalaireWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -133,8 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				2AE5F6E92DABDD700049750E /* SalaireWidgetApp */,
-				2AE5F6FB2DABDD720049750E /* SalaireWidgetAppTests */,
-				2AE5F7052DABDD720049750E /* SalaireWidgetAppUITests */,
 				2AE5F71F2DABDDB20049750E /* SalaireWidget */,
 				2AE5F71A2DABDDB20049750E /* Frameworks */,
 				2AE5F6E82DABDD700049750E /* Products */,
@@ -201,9 +189,6 @@
 			dependencies = (
 				2AE5F6FA2DABDD720049750E /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				2AE5F6FB2DABDD720049750E /* SalaireWidgetAppTests */,
-			);
 			name = SalaireWidgetAppTests;
 			packageProductDependencies = (
 			);
@@ -223,9 +208,6 @@
 			);
 			dependencies = (
 				2AE5F7042DABDD720049750E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				2AE5F7052DABDD720049750E /* SalaireWidgetAppUITests */,
 			);
 			name = SalaireWidgetAppUITests;
 			packageProductDependencies = (
@@ -443,7 +425,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -499,7 +481,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -509,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SalaireWidgetApp/SalaireWidgetApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -519,7 +502,11 @@
 				DEVELOPMENT_TEAM = X687XU8W9L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChronoPaie;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -528,9 +515,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -539,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SalaireWidgetApp/SalaireWidgetApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -549,7 +542,11 @@
 				DEVELOPMENT_TEAM = X687XU8W9L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChronoPaie;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -558,8 +555,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -574,8 +576,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalaireWidgetApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalaireWidgetApp";
 			};
 			name = Debug;
@@ -591,8 +598,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalaireWidgetApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalaireWidgetApp";
 			};
 			name = Release;
@@ -606,8 +618,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SalaireWidgetApp;
 			};
 			name = Debug;
@@ -621,8 +638,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SalaireWidgetApp;
 			};
 			name = Release;
@@ -641,6 +663,7 @@
 				INFOPLIST_FILE = SalaireWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SalaireWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -651,8 +674,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetApp.SalaireWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -670,6 +698,7 @@
 				INFOPLIST_FILE = SalaireWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SalaireWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -680,8 +709,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ilyes.SalaireWidgetApp.SalaireWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
